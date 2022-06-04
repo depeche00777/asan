@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        #wrap { }
+
+        header{ height:45px; background:#33353f;}
+        #conWrap { display:flex; flex-direction:column;  border:5px solid red; }
+            #con_up { flex:2; display:flex; border:2px solid Black; }
+                .s1-1{ flex:1; background:#4ab8bc;}
+                .con_up_r { flex:1; display:flex; flex-direction:column; }
+                    .s1-2 { flex:1; background:#589dd2; }
+                    .s1-3 { flex:1; background:#ff912f; }
+
+            #con_down { flex:1; display:flex; border:2px solid yellow; }
+                .s2-1 { flex:1; background:#589dd2; }
+                .s2-2 { flex:1; background:#8dca35; }
+
+        footer { position:fixed; bottom:0; left:0; right:0; height:100px; background:#222222;}
+
+
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+<div id="wrap">
+    <header>
+        헤더        
+    </header>
+
+    <div id="conWrap">
+        <div id="con_up">
+            <section class="s1-1">위-왼쪽</section>
+            <div class="con_up_r">
+                <section class="s1-2">위-오른쪽 1</section>
+                <section class="s1-3">위-오른쪽 2</section>
+            </div>
+        </div>
+        <div id="con_down">
+            <section class="s2-1">아래-왼쪽</section>
+            <section class="s2-2">아래-오른쪽</section>
+        </div>
+    </div>
+    <!-- #conWrap end  -->
+
+    <footer>
+        푸터
+    </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

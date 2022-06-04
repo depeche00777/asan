@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*********** Staff ***********/
+
+#conWrap.staff { padding:0; background: #efefef;}
+
+.staff_title { height:50px; line-height:50px; text-align:center; border-bottom: 1px solid #b9b9b9; background:#fff;}
+
+.staff_wrap { padding:25px 10px 0; }
+.staff_wrap p { font-size:14px; padding-bottom:15px;} 
+.staff_wrap .search { position:relative; width
+    
+.staff_listWrap:after { display:block; content:""; clear:both; }
+.staff_listWrap li { float:left; width:50%; margin-bottom:10px; box-sizing:border-box;}
+.staff_listWrap li:nth-child(2n-1) { padding-right:5px; }
+.staff_listWrap li:nth-child(2n) { padding-left:5px; }
+.staff_listWrap a { display:block; background:#fff; height:100px; text-align:center; border:1px solid #ddd; }
+.staff_listWrap img { height:78px; }
+
